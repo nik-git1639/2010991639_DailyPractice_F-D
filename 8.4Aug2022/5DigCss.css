@@ -1,0 +1,29 @@
+#box{
+	width: 0px;
+	height: 0px;
+	background-color: black;
+	border-radius: 0%;
+}
+#outerdiv{
+
+	color: black;
+}
+#outWin{
+	
+	display: flex;
+	align-items: center;         /*vertical arrangement*/
+	justify-content: center; /*horizontal arrangement*/
+	width:500px;
+	height:500px;
+	background-color: grey;
+	color: white;
+}
+input,select{
+	border-radius: 9%;
+	width: 120px;
+	height: 25px;
+
+}
+table{
+	margin-top: 1%;
+}
