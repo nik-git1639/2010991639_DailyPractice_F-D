@@ -1,0 +1,26 @@
+body{
+  background-image: url('https://wallpaperaccess.com/full/53084.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(254, 251, 255);
+  color: rgb(39, 245, 16);
+}
+
+#first{
+  height: 200px;
+  width: 250px;
+}
+
+#div1{
+  display: flex;
+}
+
+#div2{
+  display: flex;
+}
+
+.planet{
+  margin: 0.5em;
+  padding: 0.3em;
+}

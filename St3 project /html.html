@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weight Converter</title>
+  <style>
+    span {
+      color: rgb(237, 39, 40);
+    }
+  </style>
+
+<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+
+<body>
+
+
+<h1 style="color: rgb(250, 30, 191); text-align: center;">Weight On Different Planets</h1>
+ 
+        <div style="color: rgb(238, 147, 20); text-align: center;"><label><h2>Enter Value In Kilograms</h2></label>
+            <input id="Kilograms"
+                   type="number"
+                   placeholder="Kilograms"
+                   oninput="kiloweightConvert(this.value)"
+                   onchange="kiloweightConvert(this.value)"/>
+                  </div>      
+
+        
+<div id = "div1">
+<div id = "div3" class="planet"><img src="https://media.istockphoto.com/photos/venus-picture-id524200177?k=20&m=524200177&s=612x612&w=0&h=kazK2PBFY0Xn95nxB3ee8-L0_5lQe67yK9AP_1CWKKM=" alt="" width="350" height="270"><p>Mercury: <span id="Mercury"></span></p> </div>
+<div id = "div4" class="planet"><img src="https://cdn.mos.cms.futurecdn.net/8XKyr5TnMNWk3YduwA3yeM.jpg" alt="" width="350" height="270"> <p>Venus: <span id="Venus"></span></p></div>
+<div id = "div5" class="planet"><img src="https://images2.alphacoders.com/108/1086117.jpg" alt="" width="350" height="270"><p>Earth: <span id="Earth"></span></p></div>        
+<div id = "div6" class="planet"><img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/12/mars-red-space-planet-esa.jpg?q=50&fit=contain&w=960&h=480&dpr=1.5" alt="" width="350" height="270"><p>Mars: <span id="Mars"></span></p></div>
+</div><div id="div2">
+<div id = "div7" class="planet"><img src="https://ak6.picdn.net/shutterstock/videos/5290616/thumb/1.jpg?ip=x480" alt="" width="350" height="270"><p>Jupiter: <span id="Jupiter"></span></p></div>
+<div id = "div8" class="planet"><img src="https://cdn.pixabay.com/photo/2022/06/04/16/35/saturn-7242341__340.jpg" alt="" width="350" height="270"><p>Saturn: <span id="Satrun"></span></p></div>
+<div id = "div9" class="planet"><img src="https://c4.wallpaperflare.com/wallpaper/63/404/6/blue-universe-uranus-picture-wallpaper-preview.jpg" alt="" width="350" height="270"><p>Uranus: <span id="Uranus"></span></p></div>
+<div id = "div10" class="planet"><img src="https://media.istockphoto.com/photos/3d-rendering-of-neptune-planet-isolated-picture-id1023066596?b=1&k=20&m=1023066596&s=170667a&w=0&h=LDg0fte0NpuDFFZ4JbJKy1WfJ5rjXdSMx_FXRS2eIUM=" alt="" width="350" height="270"><p>Neptune: <span id="Neptune"></span></p></div>
+</div>
+
+
+ 
+ 
+        <script>
+            function kiloweightConvert(value) {
+              var mas=Number(value/9.807);
+
+                document.getElementById("Mercury").innerHTML =
+                  mas * 4.7 ;
+                document.getElementById("Venus").innerHTML =
+                  mas * 8.87;
+                document.getElementById("Earth").innerHTML =
+                  mas * 8.807;
+                document.getElementById("Mars").innerHTML =
+                  mas * 3.721;
+                document.getElementById("Jupiter").innerHTML =
+                 mas * 24.79;
+                document.getElementById("Satrun").innerHTML =
+                 mas * 10.44;
+                document.getElementById("Uranus").innerHTML =
+                 mas * 8.87;
+                document.getElementById("Neptune").innerHTML =
+                 mas * 11.15;
+                    
+            }
+        </script>
+    </body>
+</html>
